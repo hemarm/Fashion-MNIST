@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: Hema Madala
+@author: Hema M
 """
 
 import numpy as np
@@ -34,14 +34,14 @@ from keras.utils.np_utils import to_categorical
 ########################################################
 ## TRAIN DATA
 
-os.chdir('D:/Assignment/DL/Identify_the_apparel_AV/train_LbELtWX/')
+os.chdir('D:/Identify_the_apparel_AV/train_LbELtWX/')
 train = pd.read_csv('train.csv')
 train.columns, train.shape
 
 #####################################
 #VALIDATION DATA 
 
-os.chdir('D:/Assignment/DL/Identify_the_apparel_AV/test_ScVgIM0/')
+os.chdir('D:/Identify_the_apparel_AV/test_ScVgIM0/')
 val = pd.read_csv('test.csv')
 val.columns, val.shape
 
@@ -96,10 +96,10 @@ MODEL_WEIGHTS_PATH_1 = 'CNN_VGG16_identify_apparel_weights_v1.h5'
 TRAINING_LOG_FILE = 'training_labels_v1.csv'
 
 ########################################################
-#TRAIN_Check = 'D:/Assignment/DL/Identify_the_apparel_AV/train_images_1_to_100.npy'
-TRAIN_NPY = 'D:/Assignment/DL/Identify_the_apparel_AV/train_images_not_divided_by_255.npy'
-INPUT_ID_NPY = 'D:/Assignment/DL/Identify_the_apparel_AV/train_id.npy'
-INPUT_LABEL_NPY = 'D:/Assignment/DL/Identify_the_apparel_AV/train_label.npy'
+#TRAIN_Check = 'D:/Identify_the_apparel_AV/train_images_1_to_100.npy'
+TRAIN_NPY = 'D:/Identify_the_apparel_AV/train_images_not_divided_by_255.npy'
+INPUT_ID_NPY = 'D:/Identify_the_apparel_AV/train_id.npy'
+INPUT_LABEL_NPY = 'D:/Identify_the_apparel_AV/train_label.npy'
 
 train_images = np.load(TRAIN_NPY)
 data_id = np.load(INPUT_ID_NPY)

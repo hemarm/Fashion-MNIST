@@ -1,4 +1,5 @@
 # Fashion-MNIST
-Identify the apparel classification model
+Identify the apparel 
+It is classification model to identify 10 different apparels.
 
-Convert images of 10 classes to numpy array and trained model
+Method used: Converted images of 10 classes to numpy array and trained model
